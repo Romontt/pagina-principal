@@ -195,6 +195,13 @@ text-align:center;
 padding:30px;
 opacity:0.7;
 }
+footer a{
+color:white;
+text-decoration:underline;
+}
+footer a:hover{
+color:#38bdf8;
+}
 /* MOBILE */
 @media(max-width:768px){
 .navbar{
@@ -257,6 +264,7 @@ width:90%;
 <div class="nav-right" id="navMenu">
 <a href="#servicios">Servicios</a>
 <a href="#contacto">Contacto</a>
+<a href="https://www.instagram.com/visasmontzu/" target="_blank">Instagram</a>
 <a href="https://wa.me/50661961136" class="nav-btn">
 Solicitar Asesoría
 </a>
@@ -315,7 +323,8 @@ Contactar por WhatsApp
 
 <footer>
   © 2026 MontZu CR - Costa Rica | 
-  <a href="privacidad.html" target="_blank">Aviso de Privacidad</a>
+  <a href="privacidad.html" target="_blank">Aviso de Privacidad</a> | 
+  <a href="https://www.instagram.com/montzuvisas/" target="_blank">Instagram</a>
 </footer>
 
 <script>
@@ -325,29 +334,22 @@ document.getElementById("navMenu").classList.toggle("active");
 }
 
 window.addEventListener("scroll", function(){
-
 const navbar = document.getElementById("navbar");
-
 if(window.scrollY > 50){
 navbar.classList.add("scrolled");
 }else{
 navbar.classList.remove("scrolled");
 }
-
 });
 
 const sections = document.querySelectorAll(".section");
 
 const observer = new IntersectionObserver(entries => {
-
 entries.forEach(entry => {
-
 if(entry.isIntersecting){
 entry.target.classList.add("visible");
 }
-
 });
-
 }, { threshold: 0.15 });
 
 sections.forEach(section => {
