@@ -113,6 +113,7 @@ text-decoration:none;
 font-weight:bold;
 
 transition:0.3s;
+white-space:nowrap;
 }
 
 .nav-btn:hover{
@@ -257,6 +258,68 @@ footer{
 text-align:center;
 padding:30px;
 opacity:0.7;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px){
+
+.navbar{
+
+padding:10px 15px;
+
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+.logo img{
+
+width:80px;
+}
+
+.logo-text{
+
+font-size:20px;
+}
+
+.nav-right{
+
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+width:100%;
+}
+
+.nav-btn{
+
+width:100%;
+text-align:center;
+}
+
+.hero{
+
+margin-top:160px;
+padding:20px;
+}
+
+.hero-text{
+
+font-size:22px;
+}
+
+.section h2{
+
+font-size:26px;
+}
+
+.card{
+
+width:90%;
+}
+
 }
 
 </style>
