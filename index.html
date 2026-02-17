@@ -2,65 +2,157 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Bienvenido</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>MontZu CR | Servicios Digitales</title>
+
 <style>
-body {
-font-family: Arial;
-margin: 0;
-background: #f4f6f8;
-text-align: center;
+
+body{
+margin:0;
+font-family:'Segoe UI', Arial, sans-serif;
+background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+color:white;
+text-align:center;
 }
 
-header {
-background: #0d6efd;
-color: white;
-padding: 40px;
+/* HEADER */
+
+header{
+padding:80px 20px;
 }
 
-.card {
-background: white;
-margin: 20px auto;
-padding: 20px;
-max-width: 400px;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.logo{
+font-size:48px;
+font-weight:bold;
+letter-spacing:2px;
 }
 
-.btn {
-display: inline-block;
-margin-top: 10px;
-padding: 10px 20px;
-background: #0d6efd;
-color: white;
-text-decoration: none;
-border-radius: 5px;
+.subtitle{
+font-size:20px;
+opacity:0.9;
+margin-top:10px;
 }
+
+/* SERVICES */
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:40px 20px;
+}
+
+.card{
+background:white;
+color:#333;
+width:280px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+font-size:15px;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#2c5364;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1a2f38;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:50px;
+padding:20px;
+font-size:14px;
+opacity:0.8;
+}
+
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-<h1>MontielCR</h1>
-<p>Soluciones digitales</p>
+
+<div class="logo">MontZu CR</div>
+
+<div class="subtitle">
+Soluciones digitales modernas y profesionales
+</div>
+
 </header>
 
+<section class="services">
+
 <div class="card">
-<h2>Invitaciones Digitales</h2>
+
+<h3>Invitaciones Digitales</h3>
+
+<p>
+Invitaciones elegantes para bodas, cumpleaños y eventos especiales.
+</p>
+
 <a href="#" class="btn">Ver más</a>
+
 </div>
 
 <div class="card">
-<h2>Asesoría de Visas</h2>
+
+<h3>Asesoría de Visas</h3>
+
+<p>
+Asistencia profesional para trámites de visa de forma rápida y segura.
+</p>
+
 <a href="#" class="btn">Ver más</a>
+
 </div>
 
 <div class="card">
-<h2>Pataconería</h2>
+
+<h3>Servicios Digitales</h3>
+
+<p>
+Desarrollo web, soluciones digitales y servicios personalizados.
+</p>
+
 <a href="#" class="btn">Ver más</a>
+
 </div>
+
+</section>
+
+<footer>
+
+© 2026 MontZu CR - Costa Rica
+
+</footer>
 
 </body>
 </html>
+
