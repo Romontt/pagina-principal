@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- VERIFICACIÓN GOOGLE -->
-<meta name="google-site-verification" content="5gCKtbVlygrLZZXRa5VcKqxVuOgBZXkepNP24Ef-k7A" />
-
-<title>MontZu CR | Asesoría de Visas</title>
-
+<title>MontZu CR | Soluciones Profesionales</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
+<!-- Verificación Google -->
+<meta name="google-site-verification" content="5gCKtbVlygrLZZXRa5VcKqxVuOgBZXkepNP24Ef-k7A" />
 
+<style>
 /* GENERAL */
 body {
   margin: 0;
@@ -26,6 +23,10 @@ body {
   text-align: center;
   padding: 100px 20px 60px 20px;
   position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero::after {
@@ -156,35 +157,13 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
-
-  .hero {
-    padding: 60px 15px 40px 15px;
-  }
-
-  .logo {
-    font-size: 36px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .btn-main {
-    padding: 12px 25px;
-    font-size: 16px;
-  }
-
-  .services {
-    gap: 20px;
-  }
-
-  .card {
-    width: 90%;
-    padding: 25px;
-  }
-
+  .hero { padding: 60px 15px 40px 15px; }
+  .logo { font-size: 36px; }
+  .subtitle { font-size: 16px; }
+  .btn-main { padding: 12px 25px; font-size: 16px; }
+  .services { gap: 20px; }
+  .card { width: 90%; padding: 25px; }
 }
-
 </style>
 </head>
 <body>
@@ -192,62 +171,42 @@ footer {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-
     <div class="logo">MontZu CR</div>
-
     <div class="subtitle">
-      Asesoría profesional para trámites de visa de forma rápida, segura y confiable
+      Soluciones confiables para tus trámites y servicios digitales
     </div>
-
-    <a href="indexvisa.html" class="btn-main">
-      Solicitar Asesoría
-    </a>
-
+    <a href="#services" class="btn-main">Explora nuestros servicios</a>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services">
-
+<section class="services" id="services">
   <div class="card">
-
     <h3>Asesoría de Visas</h3>
-
-    <p>
-      Te ayudamos con el proceso completo de solicitud de visa paso a paso.
-    </p>
-
-    <a href="visas.html" class="btn-main">
-      Más Información
-    </a>
-
+    <p>Te ayudamos con el proceso completo de solicitud de visa paso a paso.</p>
+    <a href="visas.html" class="btn-main">Más Información</a>
   </div>
 
   <div class="card">
-
     <h3>Invitaciones Digitales</h3>
-
-    <p>
-      Invitaciones elegantes y modernas para tus eventos especiales.
-    </p>
-
-    <span class="badge">
-      Muy Pronto
-    </span>
-
+    <p>Invitaciones elegantes y modernas para tus eventos especiales.</p>
+    <span class="badge">Muy Pronto</span>
   </div>
 
+  <div class="card">
+    <h3>Próximo Servicio</h3>
+    <p>Espacio listo para cualquier otro servicio que quieras ofrecer.</p>
+    <span class="badge">Muy Pronto</span>
+  </div>
 </section>
 
 <!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/50661961136" class="whatsapp">
-WhatsApp
-</a>
+<a href="https://wa.me/50661961136" class="whatsapp">WhatsApp</a>
 
 <!-- FOOTER -->
 <footer>
-  © 2026 MontZu CR - Costa Rica | 
-  <a href="privacidad.html" target="_blank">Aviso de Privacidad</a>
+  © 2026 MontZu CR - Costa Rica | <a href="privacidad.html" style="color:#00c6ff;">Aviso Legal / Privacidad</a>
 </footer>
+
 </body>
 </html>
