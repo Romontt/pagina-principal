@@ -4,7 +4,6 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
 <title>Visas MontZu | Asesoría Profesional</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
@@ -12,238 +11,263 @@
 
 <style>
 html{
-scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 body{
-font-family:'Segoe UI', Arial, sans-serif;
-background: linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
-color:white;
+  font-family:'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+  color:white;
 }
+
 /* NAVBAR */
 .navbar{
-position:fixed;
-top:0;
-width:100%;
-height:85px;
-padding:10px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(15,23,42,0.75);
-backdrop-filter: blur(12px);
-border-bottom:1px solid rgba(255,255,255,0.1);
-z-index:1000;
-transition:all 0.35s ease;
+  position:fixed;
+  top:0;
+  width:100%;
+  height:85px;
+  padding:10px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(15,23,42,0.75);
+  backdrop-filter: blur(12px);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  z-index:1000;
+  transition:all 0.35s ease;
 }
 .navbar.scrolled{
-background:rgba(15,23,42,0.95);
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
-border-bottom:1px solid rgba(56,189,248,0.3);
+  background:rgba(15,23,42,0.95);
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+  border-bottom:1px solid rgba(56,189,248,0.3);
 }
-/* LOGO CONTENEDOR */
+/* LOGO */
 .logo{
-display:flex;
-align-items:center;
-gap:0;
-position:relative;
+  display:flex;
+  align-items:center;
+  gap:0;
+  position:relative;
 }
-/* IMAGEN LOGO */
 .logo img{
-height:80px;
-width:auto;
-display:block;
-transition:0.3s;
+  height:80px;
+  width:auto;
+  display:block;
+  transition:0.3s;
 }
 .logo img:hover{
-transform:scale(1.05);
+  transform:scale(1.05);
 }
-/* TEXTO LOGO PREMIUM */
 .logo-text{
-font-family:'Satisfy', cursive;
-font-size:28px;
-font-weight:bold;
-margin-left:-12px;
-letter-spacing:0.5px;
-background: linear-gradient(90deg,#60a5fa,#38bdf8,#0ea5e9);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-text-shadow:0 0 12px rgba(56,189,248,0.25);
+  font-family:'Satisfy', cursive;
+  font-size:28px;
+  font-weight:bold;
+  margin-left:-12px;
+  letter-spacing:0.5px;
+  background: linear-gradient(90deg,#60a5fa,#38bdf8,#0ea5e9);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 0 12px rgba(56,189,248,0.25);
 }
 /* NAV LINKS */
 .nav-right{
-display:flex;
-align-items:center;
-gap:22px;
+  display:flex;
+  align-items:center;
+  gap:22px;
 }
 .nav-right a{
-color:white;
-text-decoration:none;
-font-weight:500;
-opacity:0.9;
-transition:0.3s;
-font-size:15px;
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  opacity:0.9;
+  transition:0.3s;
+  font-size:15px;
 }
 .nav-right a:hover{
-color:#38bdf8;
+  color:#38bdf8;
 }
 /* BUTTON */
 .nav-btn{
-background: linear-gradient(90deg,#2563eb,#38bdf8);
-padding:7px 18px;
-border-radius:8px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-font-size:14px;
+  background: linear-gradient(90deg,#2563eb,#38bdf8);
+  padding:7px 18px;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+  font-size:14px;
 }
 .nav-btn:hover{
-transform:scale(1.05);
-box-shadow:0 0 15px rgba(56,189,248,0.6);
+  transform:scale(1.05);
+  box-shadow:0 0 15px rgba(56,189,248,0.6);
 }
 /* HAMBURGER */
 .hamburger{
-display:none;
-font-size:26px;
-cursor:pointer;
+  display:none;
+  font-size:26px;
+  cursor:pointer;
 }
 /* HERO */
 .hero{
-margin-top:85px;
-min-height:45vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:
-linear-gradient(rgba(15,23,42,0.45), rgba(15,23,42,0.65)),
-url('https://images.unsplash.com/photo-1508433957232-3107f5fd5995?q=80&w=2070&auto=format&fit=crop');
-background-size:cover;
-background-position:center;
+  margin-top:85px;
+  min-height:50vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    linear-gradient(rgba(15,23,42,0.45), rgba(15,23,42,0.65)),
+    url('https://images.unsplash.com/photo-1508433957232-3107f5fd5995?q=80&w=2070&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
 }
 .hero-content{
-max-width:750px;
-padding:20px;
+  max-width:750px;
+  padding:20px;
 }
 .hero-text{
-font-size:28px;
-font-weight:600;
-line-height:1.4;
-text-shadow:0 0 15px rgba(0,0,0,0.6);
+  font-size:28px;
+  font-weight:600;
+  line-height:1.4;
+  text-shadow:0 0 15px rgba(0,0,0,0.6);
 }
 /* SECTIONS */
 .section{
-padding:70px 20px;
-text-align:center;
-opacity:0;
-transform:translateY(40px);
-transition:all 0.8s ease;
+  padding:70px 20px;
+  text-align:center;
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.8s ease;
 }
 .section.visible{
-opacity:1;
-transform:translateY(0);
+  opacity:1;
+  transform:translateY(0);
 }
 .section h2{
-font-size:32px;
-margin-bottom:40px;
+  font-size:32px;
+  margin-bottom:50px;
 }
-/* CARDS */
+
+/* CARDS - GLASSMORPHISM */
 .cards{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:30px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
 }
 .card{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
-padding:30px;
-width:320px;
-border-radius:15px;
-transition:0.3s;
-backdrop-filter:blur(10px);
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding:35px;
+  width:320px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  transition: all 0.3s ease;
+}
+.card img{
+  width:80px;
+  height:80px;
+  object-fit:cover;
+  border-radius:12px;
+}
+.card h3{
+  font-size:22px;
+  font-weight:600;
+}
+.card p{
+  font-size:16px;
+  line-height:1.6;
 }
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 35px rgba(0,0,0,0.5);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow:0 15px 35px rgba(0,0,0,0.45);
 }
+
 /* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px 18px;
-border-radius:50%;
-text-decoration:none;
-color:white;
-font-size:22px;
-box-shadow:0 0 15px rgba(0,0,0,0.4);
-transition:0.3s;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px 18px;
+  border-radius:50%;
+  text-decoration:none;
+  color:white;
+  font-size:22px;
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  transition:0.3s;
 }
 .whatsapp:hover{
-transform:scale(1.1);
+  transform:scale(1.1);
 }
+
 /* FOOTER */
 footer{
-text-align:center;
-padding:30px;
-opacity:0.7;
+  text-align:center;
+  padding:30px;
+  opacity:0.85;
 }
 footer a{
-color:white;
-text-decoration:underline;
+  color:white;
+  text-decoration:underline;
 }
 footer a:hover{
-color:#38bdf8;
+  color:#38bdf8;
 }
-/* MOBILE */
+
+/* RESPONSIVE */
 @media(max-width:768px){
-.navbar{
-padding:10px 20px;
-}
-.logo img{
-height:70px;
-}
-.logo-text{
-font-size:24px;
-margin-left:-10px;
-}
-.hamburger{
-display:block;
-}
-.nav-right{
-position:absolute;
-top:85px;
-right:0;
-background:rgba(15,23,42,0.98);
-width:100%;
-flex-direction:column;
-align-items:center;
-gap:20px;
-padding:20px;
-display:none;
-}
-.nav-right.active{
-display:flex;
-}
-.hero{
-min-height:40vh;
-}
-.hero-text{
-font-size:22px;
-}
-.section h2{
-font-size:26px;
-}
-.card{
-width:90%;
-}
+  .navbar{
+    padding:10px 20px;
+  }
+  .logo img{
+    height:70px;
+  }
+  .logo-text{
+    font-size:24px;
+    margin-left:-10px;
+  }
+  .hamburger{
+    display:block;
+  }
+  .nav-right{
+    position:absolute;
+    top:85px;
+    right:0;
+    background:rgba(15,23,42,0.98);
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    display:none;
+  }
+  .nav-right.active{
+    display:flex;
+  }
+  .hero{
+    min-height:40vh;
+  }
+  .hero-text{
+    font-size:22px;
+  }
+  .section h2{
+    font-size:26px;
+  }
+  .card{
+    width:90%;
+    padding:25px;
+  }
 }
 </style>
 
@@ -257,17 +281,13 @@ width:90%;
 <div class="logo-text">Visas MontZu</div>
 </div>
 
-<div class="hamburger" onclick="toggleMenu()">
-☰
-</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
 
 <div class="nav-right" id="navMenu">
 <a href="#servicios">Servicios</a>
 <a href="#contacto">Contacto</a>
 <a href="https://www.instagram.com/visasmontzu/" target="_blank">Instagram</a>
-<a href="https://wa.me/50661961136" class="nav-btn">
-Solicitar Asesoría
-</a>
+<a href="https://wa.me/50661961136" class="nav-btn">Solicitar Asesoría</a>
 </div>
 
 </div>
@@ -275,7 +295,7 @@ Solicitar Asesoría
 <section class="hero">
 <div class="hero-content">
 <div class="hero-text">
-Asesoría profesional para visas de turista y tránsito a Estados Unidos.
+Asesoría profesional para visas de turista y tránsito a Estados Unidos.<br>
 Proceso guiado, claro y confiable.
 </div>
 </div>
@@ -288,11 +308,13 @@ Proceso guiado, claro y confiable.
 <div class="cards">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1590608897129-79f0b07fdb2b?q=80&w=400&auto=format&fit=crop" alt="Visa Turista">
 <h3>Visa de Turista</h3>
 <p>Asesoría completa en formulario DS-160, preparación y guía paso a paso.</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1600180758895-3c66e6e2e56d?q=80&w=400&auto=format&fit=crop" alt="Visa Tránsito">
 <h3>Visa de Tránsito</h3>
 <p>Asesoría completa para visas de tránsito en aeropuertos de Estados Unidos.</p>
 </div>
@@ -311,15 +333,11 @@ Contáctanos directamente por WhatsApp para iniciar tu proceso.
 
 <br>
 
-<a href="https://wa.me/50661961136" class="nav-btn">
-Contactar por WhatsApp
-</a>
+<a href="https://wa.me/50661961136" class="nav-btn">Contactar por WhatsApp</a>
 
 </section>
 
-<a href="https://wa.me/50661961136" class="whatsapp">
-💬
-</a>
+<a href="https://wa.me/50661961136" class="whatsapp">💬</a>
 
 <footer>
   © 2026 MontZu CR - Costa Rica | 
@@ -328,34 +346,29 @@ Contactar por WhatsApp
 </footer>
 
 <script>
-
 function toggleMenu(){
-document.getElementById("navMenu").classList.toggle("active");
+  document.getElementById("navMenu").classList.toggle("active");
 }
 
 window.addEventListener("scroll", function(){
-const navbar = document.getElementById("navbar");
-if(window.scrollY > 50){
-navbar.classList.add("scrolled");
-}else{
-navbar.classList.remove("scrolled");
-}
+  const navbar = document.getElementById("navbar");
+  if(window.scrollY > 50){
+    navbar.classList.add("scrolled");
+  }else{
+    navbar.classList.remove("scrolled");
+  }
 });
 
 const sections = document.querySelectorAll(".section");
-
 const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if(entry.isIntersecting){
-entry.target.classList.add("visible");
-}
-});
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+    }
+  });
 }, { threshold: 0.15 });
 
-sections.forEach(section => {
-observer.observe(section);
-});
-
+sections.forEach(section => observer.observe(section));
 </script>
 
 </body>
