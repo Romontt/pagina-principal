@@ -80,7 +80,8 @@ body{
 /* Interior */
 .flip-card-inner{
   position: relative; width: 100%; height: 100%;
-  transition: transform 0.8s; transform-style: preserve-3d;
+  transition: transform 1.2s; /* Animación más lenta */
+  transform-style: preserve-3d;
 }
 
 /* Rotar al hover / click */
@@ -103,6 +104,7 @@ body{
   box-shadow:0 8px 25px rgba(0,0,0,0.25);
 }
 .flip-card-front i{font-size:60px; color:#38bdf8; margin-bottom:20px;}
+.flip-card-front p{margin-top:10px;}
 
 /* Reverso */
 .flip-card-back{
@@ -140,7 +142,6 @@ footer a:hover{color:#38bdf8;}
   .flip-card{width:90%; height:380px; margin:0 auto;}
 }
 
-/* FIN CSS */
 </style>
 
 </head>
@@ -179,10 +180,11 @@ footer a:hover{color:#38bdf8;}
       <div class="flip-card-front">
         <i class="fa-solid fa-passport"></i>
         <h3>Visa de Turista</h3>
+        <p>Asesoría completa en formulario DS-160, preparación y guía paso a paso.</p>
       </div>
       <div class="flip-card-back">
-        <h3>Visa de Turista</h3>
-        <p>Asesoría completa en formulario DS-160, documentación necesaria y preparación de la cita en la embajada de EE.UU. Ideal para viajes de turismo y vacaciones.</p>
+        <h3>Diferencia</h3>
+        <p>Visa de Turista: para viajes de turismo y vacaciones en Estados Unidos.</p>
       </div>
     </div>
   </div>
@@ -193,10 +195,11 @@ footer a:hover{color:#38bdf8;}
       <div class="flip-card-front">
         <i class="fa-solid fa-plane-up"></i>
         <h3>Visa de Tránsito</h3>
+        <p>Asesoría completa para visas de tránsito en aeropuertos de EE.UU.</p>
       </div>
       <div class="flip-card-back">
-        <h3>Visa de Tránsito</h3>
-        <p>Asesoría completa para visas de tránsito en EE.UU., incluyendo requisitos y pasos para viajes con conexión internacional en aeropuertos estadounidenses.</p>
+        <h3>Diferencia</h3>
+        <p>Visa de Tránsito: para viajes con conexión internacional en Estados Unidos.</p>
       </div>
     </div>
   </div>
