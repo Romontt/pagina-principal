@@ -42,11 +42,12 @@ body {
 .card:nth-child(2) { animation-delay: 0.2s; }
 .card:nth-child(3) { animation-delay: 0.3s; }
 
-/* --- NAVBAR (Ultra-Slim) --- */
+/* --- NAVBAR (Extendido a las orillas) --- */
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0; /* Asegura que inicie en el borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho */
     height: var(--nav-height);
     background: rgba(10, 11, 16, 0.8);
     backdrop-filter: blur(20px);
@@ -56,9 +57,10 @@ body {
     align-items: center;
 }
 
+/* El contenedor interno sigue compacto para que el logo no se pegue al borde físico de la pantalla */
 .nav-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1000px; /* Alineado con el contenido del sitio */
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -244,14 +246,16 @@ body {
     line-height: 1.8;
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER (Extendido a las orillas) --- */
 .main-footer {
+    width: 100%; /* Ahora simplemente ocupa el 100% sin márgenes negativos */
     background: #050608;
     border-top: 1px solid var(--border);
     padding: 60px 0 30px;
-    width: 100%;
+    margin-top: 80px; /* Espacio con la sección anterior */
 }
 
+/* El contenedor interno del footer también se mantiene compacto */
 .footer-container {
     max-width: 1000px;
     margin: 0 auto;
