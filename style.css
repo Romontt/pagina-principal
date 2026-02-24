@@ -1,19 +1,11 @@
-/* =========================================
-   PALETA DE COLORES - LUXURY TECH (GRIS & ORO)
-   ========================================= */
 :root {
-    --bg-dark: #08090a;        /* Negro casi puro para el fondo */
-    --card-bg: #121418;        /* Gris carbón metálico para tarjetas */
-    --card-hover: #1a1d23;     /* Gris un poco más claro al pasar el mouse */
-    --gold: #D4AF37;           /* Dorado clásico Montzu */
-    --gold-glow: rgba(212, 175, 55, 0.2);
-    --text-main: #ffffff;
-    --text-dim: #a0a6b1;       /* Gris suave para descripciones */
+    --bg-main: #0a0b10;       /* Negro profundidad */
+    --card-bg: #14171f;       /* Gris carbón profesional */
+    --gold: #D4AF37;          /* Dorado Montzu */
+    --text-light: #f0f0f0;
+    --text-dim: #9aa0a6;
 }
 
-/* =========================================
-   RESET Y BASE
-   ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -21,171 +13,129 @@
 }
 
 body {
-    background-color: var(--bg-dark);
-    /* Efecto de iluminación sutil en el fondo */
-    background: radial-gradient(circle at top, #1c1f26 0%, var(--bg-dark) 70%);
-    color: var(--text-main);
+    background-color: var(--bg-main);
+    background: radial-gradient(circle at top, #1a202c 0%, var(--bg-main) 100%);
+    color: var(--text-light);
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .main-content {
     width: 100%;
     max-width: 1200px;
-    padding: 60px 20px;
-    margin: 0 auto;
-}
-
-/* =========================================
-   HEADER / HERO
-   ========================================= */
-.hero {
+    padding: 40px 20px;
     text-align: center;
-    margin-bottom: 60px;
 }
 
+/* --- LOGO Y TEXTO --- */
 .logo-text {
-    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Se ajusta solo en móviles */
+    font-size: 3.5rem;
     font-weight: 800;
-    color: #fff;
-    letter-spacing: clamp(5px, 2vw, 12px);
+    letter-spacing: 10px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .logo-text span {
     color: var(--gold);
-    text-shadow: 0 0 15px var(--gold-glow);
 }
 
 .tagline {
-    font-weight: 300;
     color: var(--text-dim);
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 0.9rem;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    margin-bottom: 60px;
 }
 
-/* =========================================
-   GRILLA DE SERVICIOS (ESTRUCTURA)
-   ========================================= */
+/* --- GRILLA: AQUÍ ARREGLAMOS LA ESTRUCTURA --- */
 .services-grid {
     display: grid;
-    /* Esto obliga a crear 3 columnas si hay espacio, o se apila en móvil */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 80px;
+    /* Esto obliga a tener 3 columnas de igual tamaño */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+    margin-bottom: 60px;
 }
 
 .card {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 50px 35px;
-    text-align: center;
+    padding: 45px 30px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinea botón abajo */
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
+    justify-content: space-between;
+    transition: all 0.4s ease;
 }
 
-/* Efecto Hover */
 .card:hover {
-    transform: translateY(-12px);
-    background: var(--card-hover);
+    transform: translateY(-10px);
     border-color: var(--gold);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px var(--gold-glow);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para la tarjeta de Punto 506 (Destacada) */
+.card.featured {
+    border-bottom: 3px solid var(--gold);
 }
 
 .card-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .card h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
 .card p {
     color: var(--text-dim);
-    font-size: 0.95rem;
-    margin-bottom: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
     font-weight: 300;
+    line-height: 1.5;
 }
 
-/* =========================================
-   BOTONES Y BADGES
-   ========================================= */
-.card-action {
-    margin-top: auto; /* Empuja el botón al final de la tarjeta */
-}
-
+/* --- BOTONES --- */
 .btn {
-    display: inline-block;
-    width: 100%; /* Botón ancho para balance visual */
+    display: block;
+    padding: 12px;
     border: 1px solid var(--gold);
     color: var(--gold);
-    background: transparent;
-    padding: 14px 20px;
-    border-radius: 6px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
     text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     transition: 0.3s;
 }
 
 .btn:hover {
     background: var(--gold);
     color: #000;
-    box-shadow: 0 0 15px var(--gold);
 }
 
 .status-badge {
-    display: inline-block;
-    color: #666;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 1px dashed #444;
-    padding: 12px 20px;
-    width: 100%;
-}
-
-/* =========================================
-   FOOTER
-   ========================================= */
-.footer {
-    text-align: center;
-    border-top: 1px solid #1a1d23;
-    padding-top: 40px;
-}
-
-.footer-contact a {
-    color: var(--gold);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-copyright {
-    margin-top: 15px;
     color: #555;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: 1px dashed #333;
+    display: block;
 }
 
-/* =========================================
-   AJUSTES MÓVIL
-   ========================================= */
-@media (max-width: 600px) {
+/* --- RESPONSIVO PARA CELULARES --- */
+@media (max-width: 900px) {
     .services-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
